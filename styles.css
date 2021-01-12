@@ -8,7 +8,7 @@
 header{
     background-color:#4464ad;
     color: white;
-    border-radius: 8px;
+    border-radius: 10px; 
     padding-left: 150px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -18,7 +18,7 @@ header{
 footer{
     background-color:#4464ad;
     text-align:center;
-    border-radius: 8px;
+    border-radius: 10px; 
     padding-top: 10px;
     padding-bottom: 10px;
     grid-column: 2/4;
@@ -30,12 +30,13 @@ footer{
     grid-row: 2/3;
 }
 #picOfMe{
-    box-shadow: 15px 15px 15px #45433f;
+    box-shadow: 0 0 30px #45433f;
     padding: 15px;
     float: right;
     grid-column: 3/4;
     max-width: 300px;
     height: auto;
+    border-radius: 0 10px 0 0;
 }
 .lessons{
     grid-column: 2/4;
