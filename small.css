@@ -1,62 +1,61 @@
 @charset "utf-8";
 
-.home-grid {
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-   
+body{
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
 header{
-    background-color:#4464ad;
-    color: white;
-    border-radius: 8px;
-    padding-left: 150px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    grid-column: 2/4;
-    grid-row: 1/2;
+    padding: 6px;
 }
+
 footer{
-    background-color:#4464ad;
-    text-align:center;
-    border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    grid-column: 2/4;
-    grid-row: 4/5;
+    padding: 6px;    
 }
-.clearfix{
-    overflow: auto;
-    grid-column: 2/4;
-    grid-row: 2/3;
+
+header, footer {
+    text-align: center;
+    background-color: #4464ad;
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
 #picOfMe{
-    box-shadow: 15px 15px 15px #45433f;
-    padding: 15px;
-    float: right;
-    grid-column: 3/4;
-    max-width: 300px;
+    max-width: 280px;
     height: auto;
+    
+    
 }
-.lessons{
-    grid-column: 2/4;
-    grid-row: 3/4;
-}
+
 li + li {
     margin-top: 8px;
 }
-.date{
-    color: yellow;
+
+.lessons{
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
+.date{
+    color: yellow
+}
+
 @media screen and (max-width: 700px) { 
     .home-grid {
     display: block;
     }
 } 
+
 h1 {
     font-size: 1.5rem;
     margin: 0.15rem
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
 h2 {
     font-size:1rem;
     margin-bottom: 0.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
 }
