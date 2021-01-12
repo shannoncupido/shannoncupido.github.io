@@ -12,8 +12,12 @@
      }
 
     #picOfMe{
-        box-shadow: 0 0 padding: 15px;
         float: right;
         border-radius: 0 10px 0 0;
+        box-shadow: 15px 15px 15px #45433f;
+        padding: 15px;
+        grid-column: 3/4;
+        max-width: 300px;
+        height: auto;
      }
 }
