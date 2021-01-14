@@ -1,0 +1,7 @@
+@media screen and (max-width: 600px)  { 
+    .home-grid {
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-gap: 1em; 
+    }
+} 
