@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Raleway&display=swap');
 
-body{
-    background-color: grey;
-}
 
 h1, h2, p {
     font-family: 'Arvo', 'Raleway';
@@ -24,10 +21,9 @@ h1, h2, p {
 }
 
 .column {
-    border: 1px solid black;
-    border-radius: 4px;
     background-color: white;
     text-align: center;
+    box-shadow: 15px 15px 15px #45433f;
 }
 
 header, footer {
@@ -37,6 +33,7 @@ header, footer {
     margin-right: 20%;
     border-radius: 10px;
     padding: 6px;
+    box-shadow: 15px 15px 15px #45433f;
 }
 
 h1{
