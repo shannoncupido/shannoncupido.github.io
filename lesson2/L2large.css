@@ -24,6 +24,7 @@ h1, h2, p {
     background-color: white;
     text-align: center;
     box-shadow: 15px 15px 15px #45433f;
+    border: 1px solid grey;
 }
 
 header, footer {
