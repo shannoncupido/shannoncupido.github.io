@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+header {
+
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Oswald;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h3 {
+    font-family: Oswald;
+}
+
+p, footer {
+    font-family: Roboto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+nav {
+    background-color: DodgerBlue;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0.75rem; 
+    text-decoration: none;
+    font-size: 0.95rem;
+    border: 2px solid black;
+}
+
+nav a:hover {
+    background-color: grey;
+    color: yellow;
+}
+
+img{
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 100px;
+    height: auto;
+}
+
+footer{
+    background-color: DodgerBlue;
+    padding: 6px; 
+    text-align: center;
+    margin-top: 100px;
+}
+
+.list {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#colour{
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid black; 
+}
+@media only screen and (min-width: 37.5em) {
+    nav ul {
+        display:flex;
+    }
+
+    nav li{
+        flex: 1 1 100%;
+    }
+}
+@media only screen and  (min-width: 60em) {
+    nav a {
+        font-size: 1.1rem;
+    }
+
+}
