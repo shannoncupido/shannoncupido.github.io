@@ -2,11 +2,10 @@
 <html lang="en-us">
 <head>
   <title>Preston Idaho Weather</title>
-  <link rel="stylesheet" href="\L4large.css"/> 
   <link rel="stylesheet" href="L4small.css" />
   <link rel="stylesheet" href="/normalize.css" />
   <link rel="stylesheet" href="L4medium.css"/>  
-   
+  <link rel="stylesheet" href="L4large.css"/>
 
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -15,24 +14,37 @@
   <header>
     <img 
         src="weather-logo.png" alt="logo">
-   <h1>Weather Hunt</h1>
-    <!-- <p>The weather site catch phrase/motto</p> -->
+        
+    <section class="headings">
+   <h1>Weather&nbsp;Hunt</h1>
+    <p>Hunt&nbsp;for&nbsp;the&nbsp;sunny&nbsp;weather!</p>
+  </section>
   </header>
-
+<br><br><br>
 <nav>
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Preston</a></li>
-        <li><a href="">Soda Springs</a></li>
-        <li><a href="">Fish Haven</a></li>
-        <li><a href="">Storm Center</a></li>
-        <li><a href="">Gallery</a></li>
+        <li><a href=""><b>Home</b></a></li>
+        <li><a href=""><b>Preston</b></a></li>
+        <li><a href=""><b>Soda Springs</b></a></li>
+        <li><a href=""><b>Fish Haven</b></a></li>
+        <li><a href=""><b>Storm Center</b></a></li>
+        <li><a href=""><b>Gallery</b></a></li>
   </ul>
+  <select> 
+    <option value="" selected="selected"><b>Menu</b></option> 
+    
+    <option value="/">Home</option> 
+    <option value="/collections/all">Preston</option> 
+    <option value="/blogs/five-simple-steps-blog">Soda Springs</option> 
+    <option value="/pages/about-us">Fish Haven</option> 
+    <option value="/pages/support">Storm Center</option>
+    <option value="/pages/support">Gallery</option>
+  </select> 
 </nav>
 
 <main>
   <h2>Preston Idaho</h2>
-  <div class="contentBox">Hero w/ weather summary</div>
+  <div class="contentBox" >Hero w/ weather summary</div>
   <div class="contentBox forcast">5 Day Forecast</div>
   <div class="contentBox">Article</div>
   <div class="contentBox">Contact Information</div>
@@ -41,7 +53,7 @@
 </body>
 
 <footer>
-  &copy; 2021 | Shannon Cupido | Weather Hunt</li><br>
+  &copy; 2021 | Weather Hunt | Shannon Cupido</li><br>
   <div class="date">
   <script>
     var date = document.lastModified;
