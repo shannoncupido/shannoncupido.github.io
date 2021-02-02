@@ -53,6 +53,7 @@
         margin-left: 23%;
         margin-right: 23%;
         
+        
     } 
     
     .hero-ph{
@@ -70,6 +71,7 @@
         padding: .5rem;
         box-shadow: 0 0 30px #777;
         opacity: .8;
+        
     }
 
     table {
@@ -79,7 +81,7 @@
     }
 
     table, td, th {
-        border: 1px solid black;
+        border: 2px solid black;
     }
 
     .sun {
