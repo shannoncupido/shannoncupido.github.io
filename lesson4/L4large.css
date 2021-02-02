@@ -7,10 +7,43 @@ header {
     text-align: center;
     
 }
-p {
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px dotted cyan;
+    width: 100%;
+    height: 250px;
+} 
+
+.hero-ph{
+    margin: 10px auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: 960px;
+    height: 300px;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background: radial-gradient(rgba(30, 143, 255, 0.616), DodgerBlue);
+    border: 1px solid black;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    opacity: .8;
+}
+
+h4 {
     margin-top: -20px;
     font-family: Roboto;
     margin-left: 33px;
+}
+
+p{
+    margin-top: -20px;
+    font-family: Roboto;
 }
 
 h1, h2 {
@@ -97,7 +130,7 @@ nav .contentBox {
     h2{
         font-size: 2rem;
     }
-    p{
+    h4{
         margin-left: 80px;
     }
 
@@ -114,7 +147,7 @@ nav select {
     display: none;
   }
 
-  @media (max-width: 670px) {
+  @media (max-width: 730px) {
     nav ul     { display: none; }
     nav select { display: inline-block; 
         padding: 6px; 
