@@ -2,9 +2,17 @@
 
 
 
+#banner {
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.76);
+    border: 2px solid black;
+    margin: 0 auto; 
+    max-width: 50%
+}
 
 
-    header {
+.asdasrg {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -52,14 +60,15 @@
         height: auto;
         margin-left: 23%;
         margin-right: 23%;
-        
+       
         
     } 
     
     .hero-ph{
         max-width: 100%;
         height: auto;
-        
+        position: relative;
+        border: 2px solid black;
     }
 
     .weathersummary {
@@ -243,13 +252,13 @@
     .office{           
         display: block;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
         }
     
     .contact{           
         display: block;
          margin-left: auto;
-         margin-right: auto
+         margin-right: auto;
         }
 
     .article{ display:flex;

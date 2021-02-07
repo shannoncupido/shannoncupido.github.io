@@ -12,18 +12,30 @@
 </head>
 <body>
 
-  <header>
-    <img class="logo"
+  <header> 
+    <div id="banner">
+      <h5><b>Saturday = Preston Pancakes in the Park! 
+    9:00 a.m. Saturday at the city park pavilion.</b></h5>
+    </div>
+    <div class="asdasrg"><img class="logo"
         src="weather-logo.png" alt="logo">
-        
-    <section class="headings">
-   <h1>Weather&nbsp;Hunt</h1>
-    <h4>Hunt&nbsp;for&nbsp;the&nbsp;sunny&nbsp;weather!</p>
-  </section>
+      <section class="headings">
+        <h1>Weather&nbsp;Hunt</h1>
+        <h4>Hunt&nbsp;for&nbsp;the&nbsp;sunny&nbsp;weather!</p>
+      </section>
+    </div>
   </header>
 
   <br><br><br>
-
+  <script>
+    var d = new Date();
+    var n = d.getDay();
+    var x = document.getElementById("banner");
+    if (n != 5) {
+      x.style.display = "none";
+    }
+  
+  </script>
 <nav>
     <ul>
         <li><a href=""><b>Home</b></a></li>
@@ -49,10 +61,10 @@
   <h2>Preston Idaho</h2>
 
   <div class="herodiv">
-    <div class="hero-ph">
+    
       <img class="hero-ph" src="heroimg.jpg " alt="skyimg" 
       >
-    </div>
+   
     <section class="weathersummary">
         <h3>Weather Summary</h3>
         <p>Currently</p>
