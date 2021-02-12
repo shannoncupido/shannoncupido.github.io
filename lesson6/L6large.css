@@ -28,6 +28,7 @@
         max-width: 80px;
         height: auto;
         padding-right: 30px;
+        padding-top: 35px;
 
     }
 
@@ -297,5 +298,19 @@
      }
      .hero-ph{
         width: 100%;
+    }
+    h1{
+        font-size: 200%;
+    }
+    h2{
+        font-size: 150%;
+    }
+   
+    h4{
+        font-size: 90%;
+    }
+    .logo{
+        max-width: 60px;
+        height: auto;
     }
 }
