@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+
+
+#banner {
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.76);
+    border: 2px solid black;
+    margin: 0 auto; 
+    max-width: 50%
+}
+
+
+.asdasrg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .headings {
+        text-align: center;
+    }
+    
+
+    .logo{
+        max-width: 80px;
+        height: auto;
+        padding-right: 30px;
+
+    }
+
+    h1{
+        font-size: 3rem;
+        font-family: Oswald;
+        text-align: center;
+        padding-right: 85px;
+       
+    }
+
+    h4{
+        margin-top: -20px;
+        font-family: Oswald;
+        padding-right: 85px;
+    }
+
+    
+
+    h2{
+        font-size: 2rem;
+        font-family: Oswald;
+        text-align: center;
+    }
+
+    .herodiv {
+        margin: 10px auto;
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        margin-left: 23%;
+        margin-right: 23%;
+       
+        
+    } 
+    
+    .hero-ph{
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        border: 2px solid black;
+    }
+
+    .weathersummary {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: radial-gradient(rgba(30, 143, 255, 0.616), DodgerBlue);
+        border: 1px solid black;
+        padding: .5rem;
+        box-shadow: 0 0 30px #777;
+        opacity: .8;
+        
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 2px solid black;
+    }
+
+    .sun {
+        max-width: 50px;
+        height: auto;
+    }
+
+    tr:nth-child(1)
+    {
+      background-color:DodgerBlue;}
+
+    tr:nth-child(2)
+    {
+        background-color: lightgray;
+    }
+
+    nav ul {
+        display:flex;
+    }
+
+    nav li{
+        flex: 1 1 100%;
+    }
+    p{
+        font-family: Roboto;
+        margin-top: -20px;
+        
+    }
+    h3 {
+        font-family: Oswald;
+        text-align: center;
+    }
+
+    nav {
+        background-color: DodgerBlue;
+        text-align: center;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 0.75rem; 
+        text-decoration: none;
+        font-size: 0.95rem;
+        border: 2px solid black;
+    }
+
+    nav a:hover {
+        background-color: grey;
+        color: yellow;
+    }
+    nav .current {
+        background-color: grey;
+}
+    .logo{
+        max-width: 70px;
+        height: auto;
+        margin-right: -20px;
+
+    }
+
+.article{
+    margin-left: 23%;
+    margin-right: 23%;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.masks{
+    height: 150px;
+    width: 250px;
+    float: right;
+}
+
+#more{
+    display: none;
+}
+
+#smallP{
+    color: rgb(78, 78, 78);
+    font-size: 80%;
+    text-align: center;
+}
+
+.office{       
+
+    height: 150px;
+    width: 250px;
+    float: left;
+
+}
+.contactInfo {
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: lightgray;
+}
+
+.contact {
+    float: right;
+}
+
+.social_logo {
+    border-radius: 50%;
+    max-width: 25px;
+    height: auto;
+}
+
+    footer{
+        background-color: DodgerBlue;
+        padding: 6px; 
+        text-align: center;
+        margin-top: 150px;
+        font-family: Roboto;
+        margin-left: 18%;
+        margin-right: 18%;
+        border: .5px solid black;
+    }
+    .contentBox {
+        text-align: center;
+        background-color: #d6d6c2;
+        margin-left: 23%;
+        margin-right: 23%;
+        padding: 0.75rem; 
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 2px dotted black;
+    }
+    nav .contentBox {
+        background-color: DodgerBlue;
+        color: yellow;
+    }
+
+    nav select {
+        display: none;
+    }
+
+@media screen and (min-width: 600px) and (max-width: 1000px) { 
+    .contactInfo {    
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    .office{           
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    
+    .contact{           
+        display: block;
+         margin-left: auto;
+         margin-right: auto;
+        }
+
+    .article{ display:flex;
+        flex-direction: column;
+    }
+
+    .masks{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+} 
+
+@media (max-width: 600px) {
+    nav ul     { display: none; }
+    nav select { display: inline-block; 
+        padding: 6px; 
+        background-color: DodgerBlue;
+        border: 3px solid black;
+    }
+
+    table { display: none; }
+
+   .weathersummary {
+
+        top: 0px;
+        left: 0px;
+
+    }
+    .office{
+     display: none; }
+    
+     .article{
+        margin-left: 20%;
+        margin-right: 20%;
+     }
+     .hero-ph{
+        width: 100%;
+    }
+}
