@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="L6large.css"/>
   <link rel="shortcut icon" href="favicon.ico">
 
+
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
   <header> 
     <div id="banner">
       <h5><b>Saturday = Preston Pancakes in the Park! 
@@ -66,13 +67,14 @@
    
     <section class="weathersummary">
         <h3>Weather Summary</h3>
-        <p>Currently</p>
-        <p>High</p>
-        <p>Wind Chill</p>
-        <p>Humidity</p>
-        <p>Wind Speed</p>
+        <p>Currently: <b><span id="current">33</span>  &deg;F</b></p>
+        <p>High: <b>35 &deg;F</b></p>
+        <p>Wind Chill: <b><span id="WChill"></span>  </p></b>
+        <p>Humidity: <b>94%</b></p>
+        <p>Wind Speed: <b><span id="WSpeed">4</span> mph</b></p>
     </section>
   </div>
+  <script src="Script/windchill.js"></script>
   <br><br>
   <h3>5 Day Forecast</h3>
   <table style="width:50%">
