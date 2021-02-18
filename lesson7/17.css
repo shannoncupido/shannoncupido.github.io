@@ -1,0 +1,14 @@
+picture img {
+    width: 300px;
+    height: 400px;
+    filter: blur(0.2em);
+}
+
+.loaded_img{
+    filter:blur(0em);
+    transition: filter 0.5s;
+}
+picture{
+    display: block;
+}
+
