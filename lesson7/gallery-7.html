@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Course Home</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href="L7large.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header> 
+    <div class="asdasrg"><img class="logo"
+        src="weather-logo.png" alt="logo">
+      <section class="headings">
+        <h1>Weather&nbsp;Hunt</h1>
+        <h4>Hunt&nbsp;for&nbsp;the&nbsp;sunny&nbsp;weather!</p>
+      </section>
+    </div>
+  </header>
+
+  <br><br><br>
+  <script>
+    var d = new Date();
+    var n = d.getDay();
+    var x = document.getElementById("banner");
+    if (n != 5) {
+      x.style.display = "none";
+    }
+  
+  </script>
+<nav>
+    <ul>
+        <li><a href=""><b>Home</b></a></li>
+        <li><a href="/lesson6/preston-6.html"><b>Preston</b></a></li>
+        <li><a href=""><b>Soda&nbsp;Springs</b></a></li>
+        <li><a href=""><b>Fish&nbsp;Haven</b></a></li>
+        <li><a href=""><b>Storm&nbsp;Center</b></a></li>
+        <li><a class="current"href=""><b>Gallery</b></a></li>
+  </ul>
+  <select> 
+    <option value="" selected="selected"><b>Menu</b></option> 
+    
+    <option value="/">Home</option> 
+    <option value="/collections/all">Preston</option> 
+    <option value="/blogs/five-simple-steps-blog">Soda Springs</option> 
+    <option value="/pages/about-us">Fish Haven</option> 
+    <option value="/pages/support">Storm Center</option>
+    <option value="/pages/support">Gallery</option>
+  </select> 
+</nav>
+
+
+  <header>
+   <h2>Gallery</h2>
+  </header>
+
+  <div class="grid-container">
+
+  <picture>
+    <img data-src="sunny.jpg" src="placeHolder.jpg">
+    <p>Beautiful sunny sky</p>
+  </picture>
+
+  <picture>
+    <img data-src="rainbow.webp" src="placeHolder.jpg">
+    <p>Gorgeous rainbow covering the horizon</p>
+  </picture>
+  
+  <picture>
+    <img data-src="snowy.jpg" src="placeHolder.jpg">
+    <p>Fluffy white snow covering the earth and trees</p>
+  </picture>
+
+  <picture>
+    <img data-src="ice.jpg" src="placeHolder.jpg">
+    <p>Ice forming from any liquid source</p>
+  </picture>
+
+  <picture>
+    <img data-src="rain.jpg" src="placeHolder.jpg">
+    <p>Droplets of chilly rain</p>
+  </picture>
+
+  <picture>
+    <img data-src="lightning.webp" src="placeHolder.jpg">
+    <p>Bright flashes of lightning covering the night sky</p>
+  </picture>
+
+  <picture>
+    <img data-src="tornado.webp" src="placeHolder.jpg">
+    <p>Tornado raging over the earth</p>
+  </picture>
+
+  <picture>
+    <img data-src="cloudy.webp" src="placeHolder.jpg">
+    <p>Dark ominous clouds covering the sky</p>
+  </picture>
+
+  <picture>
+    <img data-src="fog.jpg" src="placeHolder.jpg">
+    <p>Foggy skies making it hard to see far</p>
+  </picture>
+
+</div>
+
+  <script src="17.js"></script>
+
+</body>
+<footer>
+  &copy; 2021 | Shannon Cupido | Alberta |<a href="https://www.byui.edu/online">BYUI Online Learning</a></li><br>
+  <div class="date">
+  <script>
+    var date = document.lastModified;
+    document.writeln("Last Updated: "+date);
+ </script>
+ </div>
+</footer>
+</html>  
