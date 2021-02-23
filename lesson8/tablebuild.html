@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Table Build</title>
+  <link rel="stylesheet" href="tableb.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   
+<div id="box">
+  <table style="width:100%">
+    <tr>
+        <th colspan="3" id="title">ACME Wildwest</th>
+    </tr>
+    <tr id="name">
+        <th>Period</th>
+        <th>Sales</th> 
+        <th>Sales Goal</th>
+      </tr>
+      <tr>
+        <td>August</td>
+        <td>$3,590</td>
+        <td>$4,000</td>
+      </tr>
+      <tr>
+        <td>September</td>
+        <td>$4,420</td>
+        <td>$5,000</td>
+      </tr>
+      <tr>
+        <td>October</td>
+        <td>$4,870</td>
+        <td>$5,000</td>
+      </tr>
+      <tr>
+        <td>November</td>
+        <td>$8,610</td>
+        <td>$7,500</td>
+      </tr>     
+      <tr>
+        <td id="italic">Black Friday</td>
+        <td colspan="2">$3,200</td>
+      </tr>     
+      <tr>
+        <td>December</td>
+        <td>$6,820</td>
+        <td>$6,500</td>
+      </tr>
+      <tr>
+        <td colspan="3" id="date">
+            <div>
+                <script>
+                var date = document.lastModified.split(' ');
+                document.writeln("Compiled "+date[0], " by bRaulis"); 
+                </script>
+            </div>
+        </td>
+      </tr>
+    </table>
+</div>
+</body>
+<footer>
+
+
+</footer>
+</html>  
