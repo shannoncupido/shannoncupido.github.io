@@ -11,10 +11,12 @@ form fieldset {
 }
 
 form legend {
-    color: black(25, 109, 194);
+    color: black;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 1.4rem;
+    background-color:grey;
+    border-radius: 8px;
 }
 
 form label.top, form div {
