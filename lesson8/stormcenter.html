@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Storm Center</title>
+  <link rel="stylesheet" href="L8large.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header> 
+    <div class="asdasrg"><img class="logo"
+        src="weather-logo.png" alt="logo">
+      <section class="headings">
+        <h1>Weather&nbsp;Hunt</h1>
+        <h4>Hunt&nbsp;for&nbsp;the&nbsp;sunny&nbsp;weather!</p>
+      </section>
+    </div>
+  </header>
+
+  <br><br><br>
+  <script>
+    var d = new Date();
+    var n = d.getDay();
+    var x = document.getElementById("banner");
+    if (n != 5) {
+      x.style.display = "none";
+    }
+  
+  </script>
+<nav>
+    <ul>
+        <li><a href=""><b>Home</b></a></li>
+        <li><a href="/lesson6/preston-6.html"><b>Preston</b></a></li>
+        <li><a href=""><b>Soda&nbsp;Springs</b></a></li>
+        <li><a href=""><b>Fish&nbsp;Haven</b></a></li>
+        <li><a class="current" href="/lesson8/stormcenter.html"><b>Storm&nbsp;Center</b></a></li>
+        <li><a href="/lesson7/gallery-7.html"><b>Gallery</b></a></li>
+  </ul>
+  <select> 
+    <option value="" selected="selected"><b>Menu</b></option> 
+    
+    <option value="/">Home</option> 
+    <option value="/collections/all">Preston</option> 
+    <option value="/blogs/five-simple-steps-blog">Soda Springs</option> 
+    <option value="/pages/about-us">Fish Haven</option> 
+    <option value="/pages/support">Storm Center</option>
+    <option value="/pages/support">Gallery</option>
+  </select> 
+</nav>
+
+
+  <header>
+   <h2>Storm Center</h2>
+  </header>
+
+    <form method="post" action="thanks.html">
+        <fieldset>
+            <legend><b>Contact Information</b></legend>
+        
+            <label class="top">Full Name* <input type="text" name="fname" required pattern="[a-zA-Z0-9\s]{5,}"> </label>
+           
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+            
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+            
+            <label class="top">Zip Code* <input type="number" name="zipCode" required></label>
+        </fieldset>
+            <br>
+        
+        <fieldset>
+            <legend><b>Storm Information</b></legend>
+            
+           
+            
+            <label class="top">Storm Date <input type="date" name="stormDate"></label>
+
+            <label class="top">Storm Type <input list="sType" name="stormType"></label>
+                <datalist id="sType">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+                <label class="sbs" for="rating">Storm Severity 
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue"></span>
+                </label>
+
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+
+            <script>
+            function 
+            adjustRating(rating) {
+                document.getElementById("ratingvalue").innerHTML = rating;
+            }
+            </script>
+
+            <label class="top">Storm Region <select name="subject">
+                    <option value="">Select Region... &#9662;</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda">Soda Springs</option>
+                    <option value="fish">Fish Haven</option>
+                    
+
+                </select>
+            </label>
+
+            <div>User in-danger level</div>
+            <label class="sbs"><input type="radio" name="audience" value="yes"> Yes</label>
+           
+            <label class="sbs"><input type="radio" name="audience" value="maybe"> Maybe</label>
+            
+            <label class="sbs"><input type="radio" name="audience" value="no"> No</label>
+        
+            <label class="top">Additional Information or Comments:
+           <br> <textarea id="textArea" name="comments" rows="4" cols="50">
+                </textarea></label>
+        
+        </fieldset>
+
+       <input class="submitBtn" type="submit" value="Submit"> 
+
+    </form>
+
+</body>
+<footer>
+  &copy; 2021 | Shannon Cupido | Alberta |<a href="https://www.byui.edu/online">BYUI Online Learning</a></li><br>
+  <div class="date">
+  <script>
+    var date = document.lastModified;
+    document.writeln("Last Updated: "+date);
+ </script>
+ </div>
+</footer>
+</html>  
