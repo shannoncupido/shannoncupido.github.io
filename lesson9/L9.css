@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+    p{display: inline;}
+
+    #banner {
+        display: block;
+        width: 80%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+
+    .asdasrg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headings {
+        text-align: center;
+    }
+    
+
+    .logo{
+        max-width: 80px;
+        height: auto;
+        padding-right: 30px;
+        padding-top: 35px;
+    }
+
+    h1{
+        font-size: 3rem;
+        font-family: Oswald;
+        text-align: center;
+        padding-right: 85px;
+    }
+
+    h4 {
+     
+        font-family: Oswald;
+    }
+
+    #headerText{
+        margin-top: -30px;
+        font-family: Oswald;
+        padding-right: 85px;
+    }
+
+    
+
+    h2{
+        font-size: 2rem;
+        font-family: Oswald;
+        text-align: center;
+    }
+
+    .herodiv {
+        margin: 10px auto;
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        margin-left: 23%;
+        margin-right: 23%;
+       
+        
+    } 
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 2px solid black;
+    }
+
+    .sun {
+        max-width: 50px;
+        height: auto;
+    }
+
+    tr:nth-child(1)
+    {
+      background-color:DodgerBlue;}
+
+    tr:nth-child(2)
+    {
+        background-color: lightgray;
+    }
+
+    nav ul {
+        display:flex;
+    }
+
+    nav li{
+        flex: 1 1 100%;
+    }
+    p{
+        font-family: Roboto;  
+    }
+    h3 {
+        font-family: Oswald;
+    }
+
+    nav {
+        background-color: DodgerBlue;
+        text-align: center;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 0.75rem; 
+        text-decoration: none;
+        font-size: 0.95rem;
+        border: 2px solid black;
+    }
+
+    nav a:hover {
+        background-color: grey;
+        color: yellow;
+    }
+    nav .current {
+        background-color: grey;
+    }
+    .logo{
+        max-width: 70px;
+        height: auto;
+        margin-right: -20px;
+
+    }
+
+
+    .office{       
+        height: 150px;
+        width: 250px;
+        float: left;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+        margin-right: 10px;
+    }
+    .contactInfo {
+        margin-top: 50px;
+        border: 2px solid black;
+        padding: 20px;
+        overflow: hidden;
+        margin-left: 32%;
+        margin-right: 32%;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+
+
+    .social_logo {
+        border-radius: 50%;
+        max-width: 25px;
+        height: auto;
+    }
+
+    footer{
+        background-color: DodgerBlue;
+        padding: 6px; 
+        text-align: center;
+        margin-top:80px;
+        font-family: Roboto;
+        margin-left: 18%;
+        margin-right: 18%;
+        border: .5px solid black;
+    }
+    .contentBox {
+        text-align: left;
+        background-color: #d6d6c2;
+        margin-left: 23%;
+        margin-right: 23%;
+        padding: 0.75rem; 
+        margin-bottom: 10px;
+        cursor: pointer;
+        border: 2px dotted black;
+        
+    }
+    nav .contentBox {
+        background-color: DodgerBlue;
+        color: yellow;
+    }
+
+    nav select {
+        display: none;
+    }
+
+    .cards {
+        text-align: center;
+    }
+
+    section {
+        border: 2px solid black;
+        background-color: lightgray; 
+        margin: 8px;
+        width: 380px;
+        box-shadow: 10px 10px 5px grey;
+        display:inline-table;
+        padding-bottom: 20px;
+        
+    }
+
+    .town_picture {
+        width: 350px;
+        height: 200px;
+        margin: 15px;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+    #textBox {
+        display: block;
+        box-shadow: 10px 10px 5px grey;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: left;
+        border: 1px solid black;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 20px;
+    }
+
+    /* Medium */
+@media screen and (min-width: 600px) and (max-width: 1260px) {
+    .cards{
+        text-align: left;
+        
+    }
+    section {
+        display: block;
+        /* grid-template-columns: auto; */
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;    
+        overflow: auto;
+    }
+    .town_picture {
+        float: right;
+    }
+    #townNumber5{
+        float: left;
+    }
+    p {
+        display: inline;
+        padding-left: 20px;
+        
+    }
+    
+    h4 {
+        display: block;
+        padding-left: 20px;
+        padding-top: 1em;
+    }
+
+    .contactInfo {    
+        display:flex;
+        flex-direction: column;
+    }
+
+    .office{    
+        margin-top: 20px;       
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact{           
+        display: block;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-top: 15px;
+    }
+}        
+
+@media (max-width: 600px) {
+
+    #textBox{
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+
+    .contactInfo{
+        margin-left: 18%;
+        margin-right: 18%;
+        
+    }
+    .contact{
+        float: none;
+    }
+    
+    nav ul   { display: none; }
+
+    nav select { display: inline-block; 
+        padding: 6px; 
+        background-color: DodgerBlue;
+        border: 3px solid black;
+    }
+
+    table { display: none; }
+
+    .office{
+     display: none; }
+    
+     .article{
+        margin-left: 20%;
+        margin-right: 20%;
+     }
+     .hero-ph{
+        width: 100%;
+    }
+    h1{
+        font-size: 200%;
+    }
+    h2{
+        font-size: 150%;
+    }
+   
+    h4{
+        font-size: 90%;
+    }
+    .logo{
+        max-width: 60px;
+        height: auto;
+    }   
+
+    #banner {
+       
+        width: 80%;
+        height: 150px;
+    }
+}

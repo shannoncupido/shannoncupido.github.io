@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="/lesson9/L9.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header> 
+    <div class="asdasrg"><img class="logo"
+        src="weather-logo.png" alt="logo">
+      <div class="headings">
+        <h1>Weather&nbsp;Hunt</h1>
+        <h4 id="headerText">Hunt&nbsp;for&nbsp;the&nbsp;sunny&nbsp;weather!</p>
+        </div>
+    </div>
+  </header>
+
+  <br><br><br>
+  <script>
+    var d = new Date();
+    var n = d.getDay();
+    var x = document.getElementById("banner");
+    if (n != 5) {
+      x.style.display = "none";
+    }
+  
+  </script>
+<nav>
+    <ul>
+        <li><a class="current" href="/lesson9/index.html"><b>Home</b></a></li>
+        <li><a href="/lesson6/preston-6.html"><b>Preston</b></a></li>
+        <li><a href=""><b>Soda&nbsp;Springs</b></a></li>
+        <li><a href=""><b>Fish&nbsp;Haven</b></a></li>
+        <li><a  href="/lesson8/stormcenter.html"><b>Storm&nbsp;Center</b></a></li>
+        <li><a href="/lesson7/gallery-7.html"><b>Gallery</b></a></li>
+  </ul>
+  <select> 
+    <option value="" selected="selected"><b>Menu</b></option> 
+    
+    <option value="/">Home</option> 
+    <option value="/collections/all">Preston</option> 
+    <option value="/blogs/five-simple-steps-blog">Soda Springs</option> 
+    <option value="/pages/about-us">Fish Haven</option> 
+    <option value="/pages/support">Storm Center</option>
+    <option value="/pages/support">Gallery</option>
+  </select> 
+</nav>
+
+  <header>
+   <h2>Home</h2>
+  </header>
+
+  <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("banner").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("banner").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 4000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "lightning.jpg";
+        images[1] = "rain.jpg";
+        images[2] = "sunny.jpg";
+    </script>
+
+    <body onload = "startTimer()">
+    <img id="banner" src="sunny.jpg"/><br>
+
+    <div id=textBox> <h3>The question is not whether we will experience seasons of adversity but how we will weather the storms.</h3>
+    <p>-Dieter F. Uchtdorf</p></div><br>
+
+    <div class="cards"></div>
+
+    <div class="contactInfo">
+        <img class="office" src= "office.jpg" alt="home office">
+        <div class="contact">
+          <h4>Weather Hunt</h4>
+          <p>15120 7th st E </p><br>
+          <p>Priston, ID 18469</p><br>
+          <p>&#9742; 000-000-0000</p><br>
+          <p>&#9993; www.weather@hunt.com</p><br>
+          <a href="https://www.facebook.com">
+            <img
+              class="social_logo"
+              src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ffacebook.png?v=1602287510915"
+              alt="Facebook icon"
+            />
+          </a>
+          <a href="https://twitter.com">
+            <img
+              class="social_logo"
+              src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ftwitter.png?v=1602287511778"
+              alt="twitter icon"
+            />
+          </a>
+          <a href="https://youtube.com">
+            <img
+              class="social_logo"
+              src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Fyoutube.png?v=1602288240553"
+              alt="youtube icon"
+            />
+          </a>
+        </div> <br>
+    </div>
+
+</body>
+<footer>
+  &copy; 2021 | Shannon Cupido | Alberta |<a href="https://www.byui.edu/online">BYUI Online Learning</a></li><br>
+  <div class="date">
+  <script>
+    var date = document.lastModified;
+    document.writeln("Last Updated: "+date);
+ </script>
+ <script src="/lesson9/index.js"></script>
+ </div>
+</footer>
+</html>  
