@@ -42,6 +42,7 @@ fetch(requestURL).then(function (response) {
           image.style.height = '70px';
           image.style.width = '70px';}
         image.setAttribute('src',weather +".webp");
+        image.className="weatherIcon";
         rowTwo.appendChild(image);
         
         
