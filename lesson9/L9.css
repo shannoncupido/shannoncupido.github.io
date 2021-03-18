@@ -352,12 +352,18 @@
     }
     h1{
         font-size: 200%;
+        padding-right:70px;
+    }
+
+    #headerText{
+        padding-right:70px;
     }
     h2{
         font-size: 150%;
     }
    
     h4{
+  
         font-size: 90%;
     }
     .logo{

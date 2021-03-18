@@ -130,6 +130,7 @@
         text-align: center;
         margin-left: 23%;
         margin-right: 23%;
+        box-shadow: 10px 10px 5px grey;
     }
 
     nav ul {
@@ -224,6 +225,7 @@
         margin-left: 18%;
         margin-right: 18%;
         border: .5px solid black;
+        box-shadow: 10px 10px 5px grey;
     }
     .contentBox {
         text-align: center;
@@ -294,6 +296,7 @@
     nav{
         background-color: white;
         box-shadow: none;
+        
     }
 
     table { display: none; }
@@ -316,6 +319,11 @@
     }
     h1{
         font-size: 200%;
+        padding-right:70px;
+    }
+
+    #headerText{
+        padding-right:70px;
     }
     h2{
         font-size: 150%;

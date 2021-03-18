@@ -354,6 +354,11 @@
     }
     h1{
         font-size: 200%;
+        padding-right:60px;
+    }
+
+    #headerText{
+        padding-right:60px;
     }
     h2{
         font-size: 150%;
