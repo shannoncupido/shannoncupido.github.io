@@ -54,3 +54,34 @@ fetch(requestURL).then(function (response) {
     }
     }
 );
+
+
+const URL = "https://byui-cit230.github.io/weather/data/towndata.json"
+
+fetch(URL).then(function (response) {
+  return response.json();
+}).then(function (jsonObject) {
+  console.table(jsonObject);  
+  const towns = jsonObject['towns'];
+  for (let i = 0; i < towns.length; i++ ) {
+
+      let card = document.createElement('section');
+   
+      var townsThatIWant = ["Preston"];
+
+      var n = townsThatIWant.includes(towns[i].name);
+
+      if (n) {
+  
+        let events = document.createElement('h5');
+        events.textContent =towns[i].events;
+        card.appendChild(events);
+        card.appendChild(document.createElement('br'));
+  
+
+
+      document.querySelector('div.cards').appendChild(card);
+      }
+  }
+}
+);

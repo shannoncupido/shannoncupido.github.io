@@ -128,7 +128,8 @@
     nav {
         background-color: DodgerBlue;
         text-align: center;
-
+        margin-left: 23%;
+        margin-right: 23%;
     }
 
     nav ul {
@@ -243,7 +244,7 @@
         display: none;
     }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) { 
+@media screen and (min-width: 675px) and (max-width: 1030px) { 
     .contactInfo {    
         display:flex;
         flex-direction: column;
@@ -271,9 +272,13 @@
     margin-left: auto;
     margin-right: auto;
     }
+    nav {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 } 
 
-@media (max-width: 600px) {
+@media (max-width: 675px) {
     nav ul     { display: none; }
     nav select { display: inline-block; 
         padding: 6px; 

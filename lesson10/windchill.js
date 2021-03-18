@@ -12,3 +12,4 @@ if(current<=50 && WSpeed>3){
 else{
     WChill.innerHTML="N/A";
 }
+

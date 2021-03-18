@@ -39,7 +39,6 @@
     }
 
     h4 {
-     
         font-family: Oswald;
     }
 
@@ -109,7 +108,9 @@
     nav {
         background-color: DodgerBlue;
         text-align: center;
-
+        margin-left: 23%;
+        margin-right: 23%;
+        box-shadow: 10px 10px 5px grey;
     }
 
     nav ul {
@@ -150,20 +151,26 @@
         float: left;
         border: 1px solid black;
         box-shadow: 10px 10px 5px grey;
-        margin-right: 10px;
     }
     .contactInfo {
-        margin-top: 50px;
         border: 2px solid black;
         padding: 20px;
         overflow: hidden;
-        margin-left: 32%;
-        margin-right: 32%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 50px;
+        background-color: lightgray;
         box-shadow: 10px 10px 5px grey;
     }
 
+    .contact {
+        float: right;
+    }
 
-
+    #contactTitle{
+        margin-top: -10px;
+        padding-right: 85px;
+    }
     .social_logo {
         border-radius: 50%;
         max-width: 25px;
@@ -174,11 +181,12 @@
         background-color: DodgerBlue;
         padding: 6px; 
         text-align: center;
-        margin-top:80px;
+        margin-top:50px;
         font-family: Roboto;
         margin-left: 18%;
         margin-right: 18%;
         border: .5px solid black;
+        box-shadow: 10px 10px 5px grey;
     }
     .contentBox {
         text-align: left;
@@ -226,17 +234,20 @@
     #textBox {
         display: block;
         box-shadow: 10px 10px 5px grey;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 23%;
+        margin-right: 23%;
         text-align: left;
         border: 1px solid black;
         padding-left: 2%;
         padding-right: 2%;
         padding-bottom: 20px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        
     }
 
     /* Medium */
-@media screen and (min-width: 600px) and (max-width: 1260px) {
+@media screen and (min-width: 675px) and (max-width: 1030px) {
     .cards{
         text-align: left;
         
@@ -258,7 +269,6 @@
     p {
         display: inline;
         padding-left: 20px;
-        
     }
     
     h4 {
@@ -272,8 +282,11 @@
         flex-direction: column;
     }
 
-    .office{    
-        margin-top: 20px;       
+    .article{ display:flex;
+        flex-direction: column;
+    }
+
+    .office{         
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -281,13 +294,16 @@
     
     .contact{           
         display: block;
-        /* margin-left: auto;
-        margin-right: auto; */
-        margin-top: 15px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+    nav {
+        margin-left: 8%;
+        margin-right: 8%;
     }
 }        
 
-@media (max-width: 600px) {
+@media (max-width: 675px) {
 
     #textBox{
         margin-left: 18%;

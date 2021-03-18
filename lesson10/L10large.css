@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
 
-
+.cards{
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: lightgray;
+    font-size: 150%;
+    /* font-weight: 100; */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 10px 10px 5px grey;
+}
 
 #banner {
     display: block;
@@ -9,6 +22,7 @@
     border: 2px solid black;
     margin: 0 auto; 
     max-width: 50%
+    
 }
 
 
@@ -70,6 +84,7 @@
         height: auto;
         position: relative;
         border: 2px solid black;
+        box-shadow: 10px 10px 5px grey;
     }
 
     .weathersummary {
@@ -92,6 +107,7 @@
         margin-left: auto;
         margin-right: auto;
         border-collapse: collapse;
+        box-shadow: 10px 10px 5px grey;
     }
 
     table, td, th {
@@ -114,17 +130,23 @@
 
     nav ul {
         display:flex;
+
     }
 
     nav li{
-        flex: 1 1 100%;
+        flex:  100%;
     }
     p{
         font-family: Roboto;
         margin-top: -20px;
         
     }
-    h3 {
+    .h3  {
+        font-family: Oswald;
+        text-align: center;
+    }
+
+    #forcastTitle{
         font-family: Oswald;
         text-align: center;
     }
@@ -132,7 +154,9 @@
     nav {
         background-color: DodgerBlue;
         text-align: center;
-
+        margin-left: 23%;
+        margin-right: 23%;
+        box-shadow: 10px 10px 5px grey;
     }
 
     nav ul {
@@ -167,27 +191,35 @@
     }
 
 .article{
-    margin-left: 23%;
-    margin-right: 23%;
+    margin-left: 25%;
+    margin-right: 25%;
     border: 2px solid black;
     padding: 20px;
     background-color: lightgray;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .masks{
     height: 150px;
     width: 250px;
     float: right;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px grey;
 }
 
 #more{
     display: none;
 }
 
+#newsTitle{
+    text-align: left;
+}
+
 #smallP{
     color: rgb(78, 78, 78);
     font-size: 80%;
-    text-align: center;
+    text-align: left;
 }
 
 .office{       
@@ -195,17 +227,18 @@
     height: 150px;
     width: 250px;
     float: left;
-
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px grey;
 }
 .contactInfo {
     border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
     padding: 20px;
     overflow: hidden;
     margin-left: 25%;
     margin-right: 25%;
     background-color: lightgray;
+    box-shadow: 10px 10px 5px grey;
+    margin-top: 90px;
 }
 
 .contact {
@@ -222,11 +255,12 @@
         background-color: DodgerBlue;
         padding: 6px; 
         text-align: center;
-        margin-top: 150px;
+        margin-top: 90px;
         font-family: Roboto;
-        margin-left: 18%;
-        margin-right: 18%;
+        margin-left: 25%;
+        margin-right: 25%;
         border: .5px solid black;
+        box-shadow: 10px 10px 5px grey;
     }
     .contentBox {
         text-align: center;
@@ -247,7 +281,7 @@
         display: none;
     }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) { 
+@media screen and (min-width: 675px) and (max-width: 1030px) { 
     .contactInfo {    
         display:flex;
         flex-direction: column;
@@ -271,13 +305,17 @@
     }
 
     .masks{
-        display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     }
+    nav {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 } 
 
-@media (max-width: 600px) {
+@media (max-width: 675px) {
     nav ul     { display: none; }
     nav select { display: inline-block; 
         padding: 6px; 
@@ -287,8 +325,9 @@
 
     table { display: none; }
 
-   .weathersummary {
+    #forcastTitle { display: none; }
 
+   .weathersummary {
         top: 0px;
         left: 0px;
 
@@ -317,4 +356,5 @@
         max-width: 60px;
         height: auto;
     }
+
 }
