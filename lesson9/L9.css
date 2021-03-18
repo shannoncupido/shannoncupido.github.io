@@ -156,8 +156,8 @@
         border: 2px solid black;
         padding: 20px;
         overflow: hidden;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 23%;
+        margin-right: 23%;
         margin-top: 50px;
         background-color: lightgray;
         box-shadow: 10px 10px 5px grey;
@@ -183,8 +183,8 @@
         text-align: center;
         margin-top:50px;
         font-family: Roboto;
-        margin-left: 18%;
-        margin-right: 18%;
+        margin-left: 23%;
+        margin-right: 23%;
         border: .5px solid black;
         box-shadow: 10px 10px 5px grey;
     }
@@ -319,7 +319,17 @@
     .contact{
         float: none;
     }
-    
+
+    select{
+        background-color: DodgerBlue;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+    nav{
+        background-color: white;
+        box-shadow: none;
+    }
+
     nav ul   { display: none; }
 
     nav select { display: inline-block; 
@@ -360,4 +370,5 @@
         width: 80%;
         height: 150px;
     }
+
 }

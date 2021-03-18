@@ -378,6 +378,16 @@ form label.top input:required:valid {
         border: 3px solid black;
     }
 
+    select{
+        background-color: DodgerBlue;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+    nav{
+        background-color: white;
+        box-shadow: none;
+    }
+
     table { display: none; }
 
    .weathersummary {
