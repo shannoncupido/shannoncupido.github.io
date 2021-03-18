@@ -69,17 +69,19 @@ fetch(URL).then(function (response) {
       var townsThatIWant = ["Fish Haven"];
 
       var n = townsThatIWant.includes(towns[i].name);
-
+  
       if (n) {
   
+       for (let j = 0; j < towns[i].events.length; j++) {
         let events = document.createElement('h5');
-        events.textContent =towns[i].events;
+        events.textContent =towns[i].events[j];
         card.appendChild(events);
-        card.appendChild(document.createElement('br'));
+        // card.appendChild(document.createElement('br'));
   
 
 
       document.querySelector('div.cards').appendChild(card);
+       }
       }
   }
 }
