@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap');
+
+
+html {
+    background-color: #0000ff;
+    border-right: 10rem solid #0000ff;;
+    border-left: 10rem solid #0000ff;;
+    margin: 0;
+}
+ 
+body {
+    background-color: white;
+
+}
+
+h1 footer h2 {
+    font-family: Arvo;
+}
+
+h3 h4 p{
+    font-family: Roboto;
+}
+
+#headings{
+    margin-left: 1%;
+    color:#0000ff;
+    margin-bottom: 3rem;
+    float: left;
+}
+
+nav{
+    margin-right: 1%;
+    margin-top: 4.8rem;
+    float: right;
+    margin-bottom: 3rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+nav ul{
+    display:flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    color: black;
+    padding: 1rem; 
+    text-decoration: none;
+}
+
+#navOne{
+    font-size: 125%;
+    margin-top: 4.2rem;
+}
+
+nav select {
+    display: none;
+}
+
+nav a:hover {
+    color: #0000ff;
+}
+nav .current {
+    color: #0000ff;
+}
+
+#banner {
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+    margin: 0 auto; 
+    width: 80%;
+    box-shadow: 10px 10px 5px grey;
+    float: none;
+}
+
+#companiesTitle{
+    margin-left: 10%;
+    margin-top: 3rem;
+}
+
+#companies{
+    display:flex;
+    margin-left: 10%;
+    
+}
+
+#tower{
+    display: block;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+    width: 17rem;    
+}
+
+#diapers{
+    display: block;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+    width: 17rem;
+    margin-left: 7.8%;
+}
+
+#peters{
+    display: block;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+    width: 17rem;   
+    margin-left: 7.8%; 
+}
+
+.imgComp{
+    width: 15rem;   
+    padding: 1rem;
+    height: 8.5rem;
+}
+
+#imgpeters{
+    width: 17rem;  
+    height: 8.5rem;
+    padding-bottom: 2rem;
+}
+
+.companiesText{
+    padding-left: 1rem;
+}
+
+#learnMore{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+#whatWeDo{
+    display: block;
+    width: 25rem;   
+    margin-top: 4rem;
+    margin-left: 10%;
+}
+
+#upComing{
+
+    display: block;
+    margin-top: 4rem;
+    margin-left: 10%;
+}
+
+#events{
+    display: flex ;
+}
+
+
+#weather{
+    display:flex;
+    margin-left: 10%;
+    margin-top: 3rem;
+}
+
+#currentWeather{
+    display: block;
+    width: 25rem;  
+}
+
+#threeDayFor{
+    display: block;
+    width: 25rem;  
+    padding-left: 1rem;
+    margin-left: 15%;
+}
+
+#joinContactUs{
+    display:flex;
+    margin-left: 10%;
+    margin-top: 3rem;
+}
+
+#join{
+    display: block;
+    width: 25rem;  
+}
+
+#joinButton{
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 5rem;
+    background-color: #0000ff;
+    color: white;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#contactUs{
+    display: block;
+    width: 15rem;  
+    margin-top: 2rem;
+    padding-left: 1rem;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+    margin-left: 17%;
+}
+
+
+#more{
+    display: none;
+}
+
+#currentInfo{
+    width: 25rem;  
+    margin-left: 10%;
+    float: left;
+}
+
+#history{
+    width: 25rem;  
+    margin-right: 10%;
+    float: right;
+    
+}
+
+.social_logo{
+    padding-right: 1rem;
+    margin-top: 1rem;
+    width: 2rem;
+}
+
+footer{
+ background-color:#0000ff;
+ color:white;
+ text-align: center;
+ padding: 1rem;
+ margin-top: 5rem;
+}

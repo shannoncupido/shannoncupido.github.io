@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="/Final/final.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/Final/favicon.ico">
+</head>
+
+<body>    
+
+    <div id="headings">
+        <header> 
+            <h1><img id="logo" src="/Final/logo.png" alt="logo">algary Chamber</h1>    
+        </header>
+    </div>
+
+    <nav id=navOne>
+        <ul>
+            <li><a class="current" href="/Final/login.html"><b>Member Login</b></a></li>
+            <li ><a href="/Final/join.html"><b>Join</b></a></li>
+        </ul>
+    </nav> 
+    <nav>   
+        <ul>
+            <li><a  href="/Final/index.html"><b>Home</b></a></li>
+            <li><a href="/Final/calgary.html"><b>Calgary</b></a></li>
+            <li><a href="/Final/directory.html"><b>Directory</b></a></li>
+            <li><a  href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
+        </ul>
+
+        <select onchange="location = this.value;"> 
+            <option value="#" selected="selected"><b>Menu</b></option> 
+            <option value="/Final/index.html">Home</option> 
+            <option value="/Final/calgary.html">Calgary</option> 
+            <option value="/Final/directory.html">Directory</option> 
+            <option value="/Final/ContactUs.html">Contact Us</option> 
+        </select> 
+    </nav>
+
+    <form method="post" action="thanks.html">
+        <fieldset>
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </fieldset>
+    </form>
+
+</body>
+<footer>
+  &copy; 2021 | Calgary chamber of commerce | Alberta |<a href="https://www.calgarychamber.com/"></a></li><br>
+  <div class="date">
+  <script>
+    var date = document.lastModified;
+    document.writeln("Last Updated: "+date);
+ </script>
+ <script src="/Final/final.js"></script>
+ <script src="/Final/windchill.js"></script>
+ </div>
+ <a href="https://www.facebook.com/CalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ffacebook.png?v=1602287510915"
+    alt="Facebook icon"
+    />
+</a>
+<a href="https://twitter.com/CalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ftwitter.png?v=1602287511778"
+    alt="twitter icon"
+    />
+</a>
+<a href="https://www.youtube.com/user/TheCalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Fyoutube.png?v=1602288240553"
+    alt="youtube icon"
+    />
+</a>
+</footer>
+</html>  

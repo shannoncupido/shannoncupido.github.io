@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="/Final/final.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/Final/favicon.ico">
+</head>
+
+<body>    
+
+    <div id="headings">
+        <header> 
+            <h1><img id="logo" src="/Final/logo.png" alt="logo">algary Chamber</h1>    
+        </header>
+    </div>
+
+        <nav id=navOne>
+            <ul>
+                <li><a  href="/Final/login.html"><b>Member Login</b></a></li>
+                <li ><a href="/Final/join.html"><b>Join</b></a></li>
+            </ul>
+        </nav> 
+        <nav>   
+             <ul>
+                <li><a class="current" href="/Final/index.html"><b>Home</b></a></li>
+                <li><a href="/Final/calgary.html"><b>Calgary</b></a></li>
+                <li><a href="/Final/directory.html"><b>Directory</b></a></li>
+                <li><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
+             </ul>
+
+            <select onchange="location = this.value;"> 
+                <option value="#" selected="selected"><b>Menu</b></option> 
+                <option value="/Final/index.html">Home</option> 
+                <option value="/Final/calgary.html">Calgary</option> 
+                <option value="/Final/directory.html">Directory</option> 
+                <option value="/Final/ContactUs.html">Contact Us</option> 
+            </select> 
+        </nav>
+    
+    <script type = "text/javascript">
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("banner").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("banner").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 4000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "snowMountains.jpg";
+        images[0] = "bridge.jpg";
+        images[1] = "mountains.jpg";
+        images[2] = "downtown.jpg";
+    </script>
+
+    <body onload = "startTimer()">
+    <img id="banner" src="downtown.jpg" alt="banner"/><br>
+
+    <h2 id="companiesTitle">Local Companies</h2>
+    
+    <div id="companies">
+        <div id="tower">
+            <img class="imgComp" src="tower.jpg" alt="tower cleaners img"/>
+            <h3 class="companiesText">Tower Cleaners</h3>
+            <p class="companiesText" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
+                Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+            <form id="learnMore"  action="https://www.towercleaners.ca/">
+                <input type="submit" value="Learn More" />
+            </form>
+        </div>
+
+        <div id="diapers">
+            <img class="imgComp" src="diapers.jpg" alt="diaper composting img"/>
+            <h3 class="companiesText">Soiled Diapers</h3>
+            <p class="companiesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
+                Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+            <form id="learnMore"  action="https://soileddiapers.ca/">
+                <input type="submit" value="Learn More" />
+            </form>
+        </div>
+
+        <div id="peters">
+            <img id="imgpeters" src="peters.jpg" alt="peters drive-in img"/>
+            <h3 class="companiesText">Peters Drive-in</h3>
+            <p class="companiesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
+                Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+            <form id="learnMore" action="http://www.petersdrivein.com/">
+                <input type="submit" value="Learn More" />
+            </form>
+        </div>
+    </div>
+
+        <div id="whatWeDo">
+            <h2>What we do</h2>
+            <p>The Calgary Chamber of Commerce promote interest in local business possibilites.
+                We provice information on the City like, local companies, upcoming events, the weather, and alerts.
+            </p>
+        </div>
+
+        <div id="upComing">
+            <h2>Up Coming Events</h2>
+            <div id="events">
+                
+                    <p><b>SAIT digiTALK: The future of MarTech -<br>
+                        Digital marketing trends & technology</b> <br>
+                    Tue Apr 13th 12:00pm - 1:00pm</p>
+                    <form  action="https://www.calgarychamber.com/calendar">
+                        <input type="submit" value="Learn More" />
+                    </form>
+               
+               
+                    <p><b>Engage and Grow: Marketing</b><br>
+                        Wed Apr 14th 4:00pm - 5:30pm 
+                    </p>
+                    <form  action="https://www.calgarychamber.com/calendar">
+                        <input type="submit" value="Learn More" />
+                    </form>
+               
+                    <p><b>The Future of Industry: Tourism</b><br>
+                        Wed Apr 21st 9:00am - 10:30am
+                    </p>
+                    <form   action="https://www.calgarychamber.com/calendar">
+                        <input type="submit" value="Learn More" />
+                    </form>
+                
+            </div>
+        </div>
+
+    <div id="weather">
+        <div id="currentWeather">
+            <h2>Current Weather</h2>
+            <p>Currently: <b><span id="currentW"></span>  &deg;F</b></p>
+            <p>High: <b><span id="High"></span> &deg;F</b></p>
+            <p>Wind Chill: <b><span id="WChill"></span>  </p></b>
+            <p>Humidity: <b><span id="humidity"></span></b></p>
+            <p>Wind Speed: <b><span id="WSpeed"></span> mph</b></p>
+            <div id="weatherdata"></div>
+        </div>
+
+        <div id="threeDayFor">
+            <h2>Three Day Forcast</h2>
+            <table style="width:50%">
+                <tr id="rowOne">
+                </tr>
+                <tr id="rowTwo">
+                </tr>
+              </table>
+        </div>
+    </div>
+
+    <div id="joinContactUs">
+        <div id="join">
+            <h2>Join the Chamber</h2>
+            <form  action="">
+                <input id="joinButton"type="submit" value="Join" />
+            </form>
+
+        </div>
+
+        <div id="contactUs">
+            <h2>Contact Us</h2>
+            <div id="address">
+                <p>600-237 8th Ave SE<br>
+                Calgary, AB<br>
+                T2G5C3</p>
+                <p>&#9742; 403-750-0400 <br>
+                &#9993; reception@calgarychamber.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<footer>
+  &copy; 2021 | Calgary chamber of commerce | Alberta |<a href="https://www.calgarychamber.com/"></a></li><br>
+  <div class="date">
+  <script>
+    var date = document.lastModified;
+    document.writeln("Last Updated: "+date);
+ </script>
+ <script src="/Final/final.js"></script>
+ <script src="/Final/windchill.js"></script>
+ </div>
+ <a href="https://www.facebook.com/CalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ffacebook.png?v=1602287510915"
+    alt="Facebook icon"
+    />
+</a>
+<a href="https://twitter.com/CalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ftwitter.png?v=1602287511778"
+    alt="twitter icon"
+    />
+</a>
+<a href="https://www.youtube.com/user/TheCalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Fyoutube.png?v=1602288240553"
+    alt="youtube icon"
+    />
+</a>
+</footer>
+</html>  

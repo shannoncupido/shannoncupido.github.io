@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <title>Directory</title>
+  <link rel="stylesheet" href="/Final/final.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/Final/favicon.ico">
+</head>
+
+<body>    
+
+    <div id="headings">
+        <header> 
+            <h1><img id="logo" src="/Final/logo.png" alt="logo">algary Chamber</h1>    
+        </header>
+    </div>
+
+        <nav id=navOne>
+            <ul>
+                <li><a  href="/Final/login.html"><b>Member Login</b></a></li>
+                <li ><a href=""><b>Join</b></a></li>
+            </ul>
+        </nav> 
+        <nav>   
+             <ul>
+                <li><a href="/Final/index.html"><b>Home</b></a></li>
+                <li><a href="/Final/calgary.html"><b>Calgary</b></a></li>
+                <li><a class="current" href="/Final/directory.html"><b>Directory</b></a></li>
+                <li><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
+             </ul>
+
+            <select onchange="location = this.value;"> 
+                <option value="#" selected="selected"><b>Menu</b></option> 
+                <option value="/Final/index.html">Home</option> 
+                <option value="/Final/calgary.html">Calgary</option> 
+                <option value="/Final/directory.html">Directory</option> 
+                <option value="/Final/ContactUs.html">Contact Us</option> 
+            </select> 
+        </nav>
+        
+        <div id="companies">
+            <div id="tower">
+                <img class="imgComp" src="tower.jpg" alt="tower cleaners img"/>
+                <h3 class="companiesText">Tower Cleaners</h3>
+                <p class="companiesText" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
+                    Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+                <form id="learnMore"  action="https://www.towercleaners.ca/">
+                    <input type="submit" value="Learn More" />
+                </form>
+            </div>
+    
+            <div id="diapers">
+                <img class="imgComp" src="diapers.jpg" alt="diaper composting img"/>
+                <h3 class="companiesText">Soiled Diapers</h3>
+                <p class="companiesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
+                    Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+                <form id="learnMore"  action="https://soileddiapers.ca/">
+                    <input type="submit" value="Learn More" />
+                </form>
+            </div>
+    
+            <div id="peters">
+                <img id="imgpeters" src="peters.jpg" alt="peters drive-in img"/>
+                <h3 class="companiesText">Peters Drive-in</h3>
+                <p class="companiesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
+                    Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+                <form id="learnMore" action="http://www.petersdrivein.com/">
+                    <input type="submit" value="Learn More" />
+                </form>
+            </div>
+        </div>
+</body>
+<footer>
+  &copy; 2021 | Calgary chamber of commerce | Alberta |<a href="https://www.calgarychamber.com/">Calgary chamber</a></li><br>
+  <div class="date">
+  <script>
+    var date = document.lastModified;
+    document.writeln("Last Updated: "+date);
+ </script>
+ </div>
+ <a href="https://www.facebook.com/CalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ffacebook.png?v=1602287510915"
+    alt="Facebook icon"
+    />
+</a>
+<a href="https://twitter.com/CalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Ftwitter.png?v=1602287511778"
+    alt="twitter icon"
+    />
+</a>
+<a href="https://www.youtube.com/user/TheCalgaryChamber">
+    <img
+    class="social_logo"
+    src="https://cdn.glitch.com/b106e3e7-5391-40e3-9349-3ab8af9b6db4%2Fyoutube.png?v=1602288240553"
+    alt="youtube icon"
+    />
+</a>
+</footer>
+</html>  
