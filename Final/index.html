@@ -12,22 +12,22 @@
 
     <div id="headings">
         <header> 
-            <h1><img id="logo" src="/Final/logo.png" alt="logo">algary Chamber</h1>    
+            <a href="/Final/index.html" style="text-decoration: none"><h1> <img id="logo" src="/Final/logo.png" alt="logo">algary Chamber</h1>   </a> 
         </header>
     </div>
 
-        <nav id=navOne>
+        <nav >
             <ul>
-                <li><a  href="/Final/login.html"><b>Member Login</b></a></li>
-                <li ><a href="/Final/join.html"><b>Join</b></a></li>
-            </ul>
-        </nav> 
-        <nav>   
-             <ul>
-                <li><a class="current" href="/Final/index.html"><b>Home</b></a></li>
-                <li><a href="/Final/calgary.html"><b>Calgary</b></a></li>
-                <li><a href="/Final/directory.html"><b>Directory</b></a></li>
-                <li><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
+
+                <li class="navMain"><a class="current" href="/Final/index.html"><b>Home</b></a></li>
+                <li class="navMain"><a href="/Final/calgary.html"><b>Calgary</b></a></li>
+                <li class="navMain"><a href="/Final/directory.html"><b>Directory</b></a></li>
+                <li class="navMain"><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
+
+                
+                <li class="navOne"><a  href="/Final/login.html"><b>Member Login</b></a></li>
+                <li class="navOne"><a href="/Final/join.html"><b>Join</b></a></li>
+
              </ul>
 
             <select onchange="location = this.value;"> 
@@ -70,9 +70,9 @@
         <div id="tower">
             <img class="imgComp" src="tower.jpg" alt="tower cleaners img"/>
             <h3 class="companiesText">Tower Cleaners</h3>
-            <p class="companiesText" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
-                Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+            <p class="companiesText" >When you choose Tower Cleaners to care for your garments,    
+                you are choosing impeccable client service, quality, and convenience. 
+                Tower Cleaners is your best choice for garment and textile care and maintenance.</p>
             <form id="learnMore"  action="https://www.towercleaners.ca/">
                 <input type="submit" value="Learn More" />
             </form>
@@ -110,30 +110,36 @@
 
         <div id="upComing">
             <h2>Up Coming Events</h2>
+
             <div id="events">
+            <div class="events">
+                <p><b>SAIT digiTALK: The future of MarTech -<br>
+                    Digital marketing trends & technology</b> <br>
+                Tue Apr 13th 12:00pm - 1:00pm</p>
+                <form  action="https://www.calgarychamber.com/calendar">
+                    <input type="submit" value="Learn More" />
+                </form>
+            </div>
+            
+            <div class="events">
+                <p><b>Engage and Grow: Marketing</b><br>
+                    Wed Apr 14th 4:00pm - 5:30pm 
+                </p>
+                <form  action="https://www.calgarychamber.com/calendar">
+                    <input type="submit" value="Learn More" />
+                </form>
+            </div>
+            
+            <div class="events">
+                <p><b>The Future of Industry: Tourism</b><br>
+                    Wed Apr 21st 9:00am - 10:30am
+                </p>
+                <form   action="https://www.calgarychamber.com/calendar">
+                    <input type="submit" value="Learn More" />
+                </form>
+            </div>
                 
-                    <p><b>SAIT digiTALK: The future of MarTech -<br>
-                        Digital marketing trends & technology</b> <br>
-                    Tue Apr 13th 12:00pm - 1:00pm</p>
-                    <form  action="https://www.calgarychamber.com/calendar">
-                        <input type="submit" value="Learn More" />
-                    </form>
-               
-               
-                    <p><b>Engage and Grow: Marketing</b><br>
-                        Wed Apr 14th 4:00pm - 5:30pm 
-                    </p>
-                    <form  action="https://www.calgarychamber.com/calendar">
-                        <input type="submit" value="Learn More" />
-                    </form>
-               
-                    <p><b>The Future of Industry: Tourism</b><br>
-                        Wed Apr 21st 9:00am - 10:30am
-                    </p>
-                    <form   action="https://www.calgarychamber.com/calendar">
-                        <input type="submit" value="Learn More" />
-                    </form>
-                
+        </div>
             </div>
         </div>
 
@@ -162,10 +168,7 @@
     <div id="joinContactUs">
         <div id="join">
             <h2>Join the Chamber</h2>
-            <form  action="">
-                <input id="joinButton"type="submit" value="Join" />
-            </form>
-
+            <a class="button" href="/Final/join.html">Join</a>
         </div>
 
         <div id="contactUs">

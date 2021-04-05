@@ -18,7 +18,8 @@ fetch(requestURL).then(function (response) {
 
 
     const list = jsonObject['list'];
-    for (let i = 1; i < list.length; i++ ) {
+    let days_done = 0;
+    for (let i = 1; i < list.length && days_done<3; i++ ) {
       const dt_txt = list[i]["dt_txt"];
       
       if(dt_txt.includes("18:00:00")){
@@ -50,6 +51,7 @@ fetch(requestURL).then(function (response) {
         p.textContent = temp+" °F";
         rowTwo.appendChild(p);
         document.getElementById("rowTwo").appendChild(rowTwo);
+        days_done++;
       }
     }
     }

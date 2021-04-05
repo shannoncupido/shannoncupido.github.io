@@ -21,6 +21,10 @@ h3 h4 p{
     font-family: Roboto;
 }
 
+h1 {
+    color:#0000ff;
+}
+
 #headings{
     margin-left: 1%;
     color:#0000ff;
@@ -53,9 +57,9 @@ nav a {
     text-decoration: none;
 }
 
-#navOne{
+.navOne{
     font-size: 125%;
-    margin-top: 4.2rem;
+
 }
 
 nav select {
@@ -150,7 +154,8 @@ nav .current {
 }
 
 #events{
-    display: flex ;
+ display: grid;
+ grid-template-columns: auto auto auto;
 }
 
 
@@ -183,15 +188,20 @@ nav .current {
     width: 25rem;  
 }
 
-#joinButton{
+.button {
+    font: bold 11px Arial;
     font-weight: bold;
-    border-radius: 15px;
     font-size: 5rem;
+    text-decoration: none;
     background-color: #0000ff;
     color: white;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
     box-shadow: 10px 10px 5px grey;
-}
-
+  }
 #contactUs{
     display: block;
     width: 15rem;  
@@ -202,7 +212,10 @@ nav .current {
     margin-left: 17%;
 }
 
-
+.clearfix {
+    overflow: auto;
+  }
+  
 #more{
     display: none;
 }
@@ -217,7 +230,6 @@ nav .current {
     width: 25rem;  
     margin-right: 10%;
     float: right;
-    
 }
 
 .social_logo{
@@ -233,3 +245,121 @@ footer{
  padding: 1rem;
  margin-top: 5rem;
 }
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) { 
+
+    html {
+        background-color: #0000ff;
+        border-right: 5rem solid #0000ff;;
+        border-left: 5rem solid #0000ff;;
+        margin: 0;
+    }
+
+    #companies{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #diapers{
+    margin-left: 0%;
+    }
+    
+    #peters{
+        margin-left: 0%;
+        margin-top: 1rem;
+    }
+    
+    #events{
+        display: grid;
+        grid-template-columns: auto auto
+       }
+
+    #threeDayFor{
+        margin-left: 10%;
+    }
+    
+
+    #contactUs{
+        margin-left: 0%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+
+    nav {
+        float:right;
+        border-radius: 0px;
+    }
+
+    nav ul .navMain     { display: none; }
+
+    .navOne {
+        display: inline;
+    }
+
+    nav select { display: inline-block; 
+        padding: 6px; 
+        margin-left: 3rem;
+    }
+
+    html {
+        background-color: #0000ff;
+        border-right: 2rem solid #0000ff;;
+        border-left: 2rem solid #0000ff;;
+        margin: 0;
+    }
+    #companies{
+        display:block;    
+    }
+
+    #diapers{
+        margin-left: 0%;
+        margin-top: 1rem;
+    }
+    
+    #peters{
+        margin-left: 0%;
+        margin-top: 1rem;
+    }
+
+    #whatWeDo{
+        width: 17rem;   
+    }
+
+    #events{
+        display: block ;
+        
+    }
+
+    #weather{
+        display:block;
+        margin-top: 5rem;
+    }
+
+    #threeDayFor{
+        padding-left: 0rem;
+        margin-left: 0%;
+        margin-top: 5rem;
+    }
+
+    #joinContactUs{
+        display:block;
+    }
+    
+    #contactUs{
+        margin-left: 0%;
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+
+    nav {
+        margin-top: -3rem;
+        float:left;
+    }
+
+}
+

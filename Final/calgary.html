@@ -12,32 +12,32 @@
 
     <div id="headings">
         <header> 
-            <h1><img id="logo" src="/Final/logo.png" alt="logo">algary Chamber</h1>    
+            <a href="/Final/index.html" style="text-decoration: none"><h1> <img id="logo" src="/Final/logo.png" alt="logo">algary Chamber</h1>   </a> 
         </header>
     </div>
 
-        <nav id=navOne>
-            <ul>
-                <li><a  href="/Final/login.html"><b>Member Login</b></a></li>
-                <li ><a href=""><b>Join</b></a></li>
-            </ul>
-        </nav> 
-        <nav>   
-             <ul>
-                <li><a href="/Final/index.html"><b>Home</b></a></li>
-                <li><a class="current"href="/Final/calgary.html"><b>Calgary</b></a></li>
-                <li><a href="/Final/directory.html"><b>Directory</b></a></li>
-                <li><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
-             </ul>
+    <nav >
+        <ul>
 
-            <select onchange="location = this.value;"> 
-                <option value="#" selected="selected"><b>Menu</b></option> 
-                <option value="/Final/index.html">Home</option> 
-                <option value="/Final/calgary.html">Calgary</option> 
-                <option value="/Final/directory.html">Directory</option> 
-                <option value="/Final/ContactUs.html">Contact Us</option> 
-            </select> 
-        </nav>
+            <li class="navMain"><a  href="/Final/index.html"><b>Home</b></a></li>
+            <li class="navMain"><a class="current" href="/Final/calgary.html"><b>Calgary</b></a></li>
+            <li class="navMain"><a href="/Final/directory.html"><b>Directory</b></a></li>
+            <li class="navMain"><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
+
+            
+            <li class="navOne"><a  href="/Final/login.html"><b>Member Login</b></a></li>
+            <li class="navOne"><a href="/Final/join.html"><b>Join</b></a></li>
+
+         </ul>
+
+        <select onchange="location = this.value;"> 
+            <option value="#" selected="selected"><b>Menu</b></option> 
+            <option value="/Final/index.html">Home</option> 
+            <option value="/Final/calgary.html">Calgary</option> 
+            <option value="/Final/directory.html">Directory</option> 
+            <option value="/Final/ContactUs.html">Contact Us</option> 
+        </select> 
+    </nav>
     
     <script type = "text/javascript">
         function displayNextImage() {
@@ -64,76 +64,78 @@
     <body onload = "startTimer()">
     <img id="banner" src="calgary4.jpg" alt="banner"/><br>
 
-    <div id="currentInfo">
-        <h2>Calgary</h2>
-        <p>
-            Calgary, city, southern Alberta, Canada. The physical setting of Calgary distinguishes 
-            it from other cities of the Prairie Provinces. It is situated on the western edge of 
-            the Great Plains, in the foothills of the spectacular Canadian Rockies 
-            (about 60 miles [100 km] to the west), and the surrounding valleys and uplands are
-             a distinct change from the flat prairie landscapes typical of the region. 
-             A relatively young Canadian city, it is the administrative and financial headquarters 
-             of the country’s petroleum industry. Calgary also celebrates its history as a 
-             cattle-ranching capital, an image enhanced by the city’s hosting of the annual 
-             Calgary Stampede, a 10-day rodeo-centred event. In the early 21st century, 
-             Calgary was one of the fastest-growing cities in Canada. Area 319 square miles 
-             (825 square km); metro. area, 1,972 square miles (5,108 square km). 
-             Pop. (2011) 1,096,833; metro. area, 1,214,839; (2016) 1,239,220; metro. area, 1,392,609.<br><br>
-             Reference <a href="https://www.britannica.com/place/Calgary">https://www.britannica.com/place/Calgary</a> 
+    <div class="clearfix">
+        <div id="currentInfo">
+            <h2>Calgary</h2>
+            <p>
+                Calgary, city, southern Alberta, Canada. The physical setting of Calgary distinguishes 
+                it from other cities of the Prairie Provinces. It is situated on the western edge of 
+                the Great Plains, in the foothills of the spectacular Canadian Rockies 
+                (about 60 miles [100 km] to the west), and the surrounding valleys and uplands are
+                a distinct change from the flat prairie landscapes typical of the region. 
+                A relatively young Canadian city, it is the administrative and financial headquarters 
+                of the country’s petroleum industry. Calgary also celebrates its history as a 
+                cattle-ranching capital, an image enhanced by the city’s hosting of the annual 
+                Calgary Stampede, a 10-day rodeo-centred event. In the early 21st century, 
+                Calgary was one of the fastest-growing cities in Canada. Area 319 square miles 
+                (825 square km); metro. area, 1,972 square miles (5,108 square km). 
+                Pop. (2011) 1,096,833; metro. area, 1,214,839; (2016) 1,239,220; metro. area, 1,392,609.<br><br>
+                Reference <a href="https://www.britannica.com/place/Calgary">https://www.britannica.com/place/Calgary</a> 
 
-        </p>
+            </p>
+        </div>
+
+        <div id="history"> 
+            <h2>History</h2>
+            <p>In 1875 a North-West Mounted Police (later Royal Canadian Mounted Police) 
+                post known unofficially as Fort Brisebois was founded on the site of present-day Calgary. 
+                The following year it was officially named Fort Calgary for a town on the Scottish island of Mull. 
+                The main duty of the police was to bring order to the illegal whiskey trade in the region. 
+                In 1877 the British and Canadian governments signed a peace agreement (Treaty 7) 
+                with a number of First Nations (Native American) peoples, and the region rapidly 
+                converted to a cattle-ranching frontier.
+            <br><br>
+                Calgary’s growth and development were more directly related, however, 
+                to its selection as one of the stops along the Canadian Pacific Railway (CPR), 
+                Canada’s first nationwide railway. It linked Calgary to central and eastern 
+                Canada (1883) and to Vancouver (1886) on the west coast.<span id="dots">...</span><span id="more">
+            <br><br>
+                Calgary was incorporated as a town in 1884 and as a city 10 years later, 
+                prior to the creation of the province of Alberta (1905). In 1884 it had only 
+                a few hundred settlers, but by the 1891 census its population had grown to 3,876. 
+                In 1891, after a number of false starts by other companies, the Calgary and 
+                Edmonton Railway Company completed a rail connection between the two towns and 
+                leased the line to the CPR. The CPR was a major landowner and developer within 
+                Calgary as well as a promoter of the vast blocks of agricultural land it owned 
+                in the surrounding region. The company was also among a number of private investors 
+                in the irrigation of farmland in the early 20th century, which greatly lessened 
+                the risk of drought and brought in thousands of farmers, thus leading to the 
+                expansion of Calgary’s role as a service centre.
+            <br><br>
+                With its farming community and railway connections in place, it was not long 
+                before Calgary became the main shipping centre for the cattle industry, 
+                with stockyards (some of them owned by the CPR), slaughterhouses, tanneries, 
+                and meat-processing plants. These early commercial and industrial ventures 
+                gained Calgary a lasting reputation as a “cow town.” By the early 1900s other 
+                rail lines radiated from Calgary, including a connection to the Canadian National Railway, 
+                solidifying its position as a provincial transportation centre.
+            <br><br>
+                The discovery of natural gas at nearby Turner Valley (1914) spurred a new wave of growth, 
+                centred on petroleum, particularly after Alberta’s first refinery opened in 1923. 
+                Three years after the discovery of crude oil in those fields (1936), 
+                a second refinery was built. These early investments and the location there 
+                of head offices of petroleum companies and related industries—such as 
+                those dealing with surveying, drill rigs and equipment, transportation, 
+                and pipelines—cemented Calgary’s role as the business centre of the petroleum industry. 
+                The discovery of the well-known Leduc fields near Edmonton (1947) greatly 
+                stimulated the city’s economic expansion as well, although, over time, 
+                Edmonton would become the headquarters for oil refining, equipment supply, 
+                and the servicing of oil fields.<br><br>
+                Reference <a href="https://www.britannica.com/place/Calgary">https://www.britannica.com/place/Calgary</a> 
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>   
     </div>
-
-    <div id="history"> 
-        <h2>History</h2>
-        <p>In 1875 a North-West Mounted Police (later Royal Canadian Mounted Police) 
-            post known unofficially as Fort Brisebois was founded on the site of present-day Calgary. 
-            The following year it was officially named Fort Calgary for a town on the Scottish island of Mull. 
-            The main duty of the police was to bring order to the illegal whiskey trade in the region. 
-            In 1877 the British and Canadian governments signed a peace agreement (Treaty 7) 
-            with a number of First Nations (Native American) peoples, and the region rapidly 
-            converted to a cattle-ranching frontier.
-        <br><br>
-            Calgary’s growth and development were more directly related, however, 
-            to its selection as one of the stops along the Canadian Pacific Railway (CPR), 
-            Canada’s first nationwide railway. It linked Calgary to central and eastern 
-            Canada (1883) and to Vancouver (1886) on the west coast.<span id="dots">...</span><span id="more">
-        <br><br>
-            Calgary was incorporated as a town in 1884 and as a city 10 years later, 
-            prior to the creation of the province of Alberta (1905). In 1884 it had only 
-            a few hundred settlers, but by the 1891 census its population had grown to 3,876. 
-            In 1891, after a number of false starts by other companies, the Calgary and 
-            Edmonton Railway Company completed a rail connection between the two towns and 
-            leased the line to the CPR. The CPR was a major landowner and developer within 
-            Calgary as well as a promoter of the vast blocks of agricultural land it owned 
-            in the surrounding region. The company was also among a number of private investors 
-            in the irrigation of farmland in the early 20th century, which greatly lessened 
-            the risk of drought and brought in thousands of farmers, thus leading to the 
-            expansion of Calgary’s role as a service centre.
-        <br><br>
-            With its farming community and railway connections in place, it was not long 
-            before Calgary became the main shipping centre for the cattle industry, 
-            with stockyards (some of them owned by the CPR), slaughterhouses, tanneries, 
-            and meat-processing plants. These early commercial and industrial ventures 
-            gained Calgary a lasting reputation as a “cow town.” By the early 1900s other 
-            rail lines radiated from Calgary, including a connection to the Canadian National Railway, 
-            solidifying its position as a provincial transportation centre.
-        <br><br>
-            The discovery of natural gas at nearby Turner Valley (1914) spurred a new wave of growth, 
-            centred on petroleum, particularly after Alberta’s first refinery opened in 1923. 
-            Three years after the discovery of crude oil in those fields (1936), 
-            a second refinery was built. These early investments and the location there 
-            of head offices of petroleum companies and related industries—such as 
-            those dealing with surveying, drill rigs and equipment, transportation, 
-            and pipelines—cemented Calgary’s role as the business centre of the petroleum industry. 
-            The discovery of the well-known Leduc fields near Edmonton (1947) greatly 
-            stimulated the city’s economic expansion as well, although, over time, 
-            Edmonton would become the headquarters for oil refining, equipment supply, 
-            and the servicing of oil fields.<br><br>
-            Reference <a href="https://www.britannica.com/place/Calgary">https://www.britannica.com/place/Calgary</a> 
-        </p>
-        <button onclick="myFunction()" id="myBtn">Read more</button>
-    </div>   
     <script>
         function myFunction() {
           var dots = document.getElementById("dots");
