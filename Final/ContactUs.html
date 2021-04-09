@@ -3,7 +3,7 @@
 
 <head>
   <title>Contact Us</title>
-  <link rel="stylesheet" href="/Final/final.css" />
+  <link rel="stylesheet" href="/Final/other.css" />
   <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/Final/favicon.ico">
 </head>
@@ -16,6 +16,7 @@
         </header>
     </div>
 
+    <div id="mainNav">
     <nav >
         <ul>
 
@@ -38,16 +39,11 @@
             <option value="/Final/ContactUs.html">Contact Us</option> 
         </select> 
     </nav>
-    
-    <h2>Contact Us</h2>
-    <div id="address">600-237 8th Ave SE<br>
-        Calgary, AB<br>
-        T2G5C3</p>
-        <p>&#9742; 403-750-0400 <br>
-        &#9993; reception@calgarychamber.com</p>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642407.5851127749!2d-114.64825018536807!3d51.027147044073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1617135421217!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+    <div id="googleMap">
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642407.5851127749!2d-114.64825018536807!3d51.027147044073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20AB!5e0!3m2!1sen!2sca!4v1617135421217!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>            
+    </div>
 
     <form method="post" action="thanks.html">
         <fieldset>
@@ -59,10 +55,11 @@
             <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
 
             <label class="top">Comments:
-                <br> <textarea id="textArea" name="comments" rows="4" cols="50">
+                <br> <textarea id="textArea" name="comments" rows="4" cols="35">
                      </textarea>
             </label>
         </fieldset>
+        <input class="submitBtn" type="submit" value="Submit"> 
     </form>
 
 </body>

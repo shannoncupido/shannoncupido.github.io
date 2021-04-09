@@ -3,7 +3,7 @@
 
 <head>
   <title>Directory</title>
-  <link rel="stylesheet" href="/Final/final.css" />
+  <link rel="stylesheet" href="/Final/other.css" />
   <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/Final/favicon.ico">
 </head>
@@ -16,61 +16,107 @@
         </header>
     </div>
 
-    <nav >
-        <ul>
+    <div id="mainNav">
+        <nav >
+            <ul>
 
-            <li class="navMain"><a  href="/Final/index.html"><b>Home</b></a></li>
-            <li class="navMain"><a href="/Final/calgary.html"><b>Calgary</b></a></li>
-            <li class="navMain"><a class="current" href="/Final/directory.html"><b>Directory</b></a></li>
-            <li class="navMain"><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
+                <li class="navMain"><a  href="/Final/index.html"><b>Home</b></a></li>
+                <li class="navMain"><a href="/Final/calgary.html"><b>Calgary</b></a></li>
+                <li class="navMain"><a class="current" href="/Final/directory.html"><b>Directory</b></a></li>
+                <li class="navMain"><a href="/Final/ContactUs.html"><b>Contact Us</b></a></li>
 
-            
-            <li class="navOne"><a  href="/Final/login.html"><b>Member Login</b></a></li>
-            <li class="navOne"><a href="/Final/join.html"><b>Join</b></a></li>
+                
+                <li class="navOne"><a  href="/Final/login.html"><b>Member Login</b></a></li>
+                <li class="navOne"><a href="/Final/join.html"><b>Join</b></a></li>
 
-         </ul>
+            </ul>
 
-        <select onchange="location = this.value;"> 
-            <option value="#" selected="selected"><b>Menu</b></option> 
-            <option value="/Final/index.html">Home</option> 
-            <option value="/Final/calgary.html">Calgary</option> 
-            <option value="/Final/directory.html">Directory</option> 
-            <option value="/Final/ContactUs.html">Contact Us</option> 
-        </select> 
-    </nav>
-        
+            <select onchange="location = this.value;"> 
+                <option value="#" selected="selected"><b>Menu</b></option> 
+                <option value="/Final/index.html">Home</option> 
+                <option value="/Final/calgary.html">Calgary</option> 
+                <option value="/Final/directory.html">Directory</option> 
+                <option value="/Final/ContactUs.html">Contact Us</option> 
+            </select> 
+        </nav>
+    </div>    
         <div id="companies">
-            <div id="tower">
+            <div class="companiesBox">
                 <img class="imgComp" src="tower.jpg" alt="tower cleaners img"/>
                 <h3 class="companiesText">Tower Cleaners</h3>
-                <p class="companiesText" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
-                    Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+                <p class="companiesText" >
+                    <b>Contact Information: </b><br>
+                    info@towercleaners.ca<br>
+                    403-262-3791
+                </p>
                 <form id="learnMore"  action="https://www.towercleaners.ca/">
                     <input type="submit" value="Learn More" />
                 </form>
             </div>
     
-            <div id="diapers">
+            <div class="companiesBox">
                 <img class="imgComp" src="diapers.jpg" alt="diaper composting img"/>
                 <h3 class="companiesText">Soiled Diapers</h3>
-                <p class="companiesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
-                    Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+                <p class="companiesText"><b>Contact Information: </b><br>
+                Mark Arishenkoff<br>
+            MARK@SOILEDDIAPERS.CA<br>
+            403-837-3221</p>
                 <form id="learnMore"  action="https://soileddiapers.ca/">
                     <input type="submit" value="Learn More" />
                 </form>
             </div>
     
-            <div id="peters">
+            <div class="companiesBox">
                 <img id="imgpeters" src="peters.jpg" alt="peters drive-in img"/>
                 <h3 class="companiesText">Peters Drive-in</h3>
-                <p class="companiesText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Praesent ac mauris sed velit placerat lobortis. Suspendisse quis eleifend nisi. 
-                    Aenean sed orci pharetra, blandit diam ut, volutpat mauris.</p>
+                <p class="companiesText"><b>Contact Information: </b><br>
+                info@PetersDriveIn.Com<br>
+                403-230-7886</p>
                 <form id="learnMore" action="http://www.petersdrivein.com/">
                     <input type="submit" value="Learn More" />
                 </form>
+            </div>
+
+            <div class="companiesBox">
+                <img class="imgComp" src="telus.jpg" alt="telus img"/>
+                <h3 class="companiesText">Telus</h3>
+                <p class="companiesText"><b>Contact Information: </b><br>
+                    1-866-558-2273
+                </p>
+                    <form id="learnMore" action="https://www.telus.com/">
+                        <input type="submit" value="Learn More" />
+                    </form>
+            </div>
+
+            <div class="companiesBox">
+                <img class="imgComp" src="tc.jpg" alt="TransCanada img"/>
+                <h3 class="companiesText">TransCanada</h3>
+                <p class="companiesText"><b>Contact Information: </b><br>
+                    1-800-661-3805</p>
+                    <form id="learnMore" action="https://www.tcenergy.com/">
+                        <input type="submit" value="Learn More" />
+                    </form>
+            </div>
+
+            <div class="companiesBox">
+                <img class="imgComp" src="geo.jpg" alt="Geoslope img"/>
+                <h3 class="companiesText">Geoslope</h3>
+                <p class="companiesText"><b>Contact Information: </b><br>
+                    403-269-2002</p>
+                    <form id="learnMore" action="https://www.geoslope.com">
+                        <input type="submit" value="Learn More" />
+                    </form>
+            </div>
+     
+            <div class="companiesBox">
+                <img class="imgComp" src="riddell.jpg" alt="riddell img"/>
+                <h3 class="companiesText">Riddell Kurczaba</h3>
+                <p class="companiesText"><b>Contact Information: </b><br>
+                403-266-2100
+                </p>
+                    <form id="learnMore" action="https://www.riddell.ca/">
+                        <input type="submit" value="Learn More" />
+                    </form>
             </div>
         </div>
 </body>

@@ -3,7 +3,7 @@
 
 <head>
   <title>Login</title>
-  <link rel="stylesheet" href="/Final/final.css" />
+  <link rel="stylesheet" href="/Final/other.css" />
   <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/Final/favicon.ico">
 </head>
@@ -16,6 +16,7 @@
         </header>
     </div>
 
+    <div id="mainNav">
     <nav >
         <ul>
 
@@ -38,15 +39,15 @@
             <option value="/Final/ContactUs.html">Contact Us</option> 
         </select> 
     </nav>
-
+</div>
     <form method="post" action="thanks.html">
         <fieldset>
           <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label class="top" for="uname"><b>Username</b></label>
+            <input class="top" type="text" placeholder="Enter Username" name="uname" required>
       
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label class="top" for="psw"><b>Password</b></label>
+            <input class="top" type="password" placeholder="Enter Password" name="psw" required>
               
             <button type="submit">Login</button>
             <label>
@@ -54,8 +55,7 @@
             </label>
           </div>
       
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <div class="container" >
             <span class="psw">Forgot <a href="#">password?</a></span>
         </fieldset>
     </form>

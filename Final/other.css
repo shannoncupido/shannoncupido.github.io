@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Roboto&display=swap');
+
+html {
+    background-color: #0000ff;
+    border-right: 10rem solid #0000ff;;
+    border-left: 10rem solid #0000ff;;
+    margin: 0;
+}
+ 
+body {
+    background-color: white;
+
+}
+
+h1 footer h2 {
+    font-family: Arvo;
+}
+
+h3 h4 p{
+    font-family: Roboto;
+}
+
+h1 {
+    color:#0000ff;
+}
+
+#headings{
+    margin-left: 1%;
+    color:#0000ff;
+    margin-bottom: 3rem;
+    float: left;
+}
+
+#mainNav{
+    overflow: auto;
+}
+
+nav{
+    margin-right: 1%;
+    margin-top: 4.8rem;
+    float: right;
+    margin-bottom: 3rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+nav ul{
+    display:flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    color: black;
+    padding: 1rem; 
+    text-decoration: none;
+}
+
+.navOne{
+    font-size: 125%;
+
+}
+
+nav select {
+    display: none;
+}
+
+nav a:hover {
+    color: #0000ff;
+}
+nav .current {
+    color: #0000ff;
+}
+
+#companiesTitle{
+    margin-left: 10%;
+    margin-top: 3rem;
+}
+
+#companies{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 10%;
+    
+}
+
+.companiesBox{
+    display: block;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+    width: 17rem;    
+    margin: 1rem;
+}
+
+.imgComp{
+    width: 15rem;   
+    padding: 1rem;
+    height: 8.5rem;
+}
+
+#imgpeters{
+    width: 17rem;  
+    height: 8.5rem;
+    padding-bottom: 2rem;
+}
+
+.companiesText{
+    padding-left: 1rem;
+}
+
+#learnMore{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.social_logo{
+    padding-right: 1rem;
+    margin-top: 1rem;
+    width: 2rem;
+}
+
+footer{
+ background-color:#0000ff;
+ color:white;
+ text-align: center;
+ padding: 1rem;
+ margin-top: 5rem;
+}
+
+
+#googleMap, iframe{
+    display: block;
+    margin:auto;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #0000ff;
+    color:white;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 10px 10px 5px grey;
+}
+
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.4rem;
+    background-color:grey;
+    border-radius: 8px;
+    
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px rgb(25, 109, 194);
+    border-radius:4px;
+    padding: .75rem;
+    width: 100%;
+    max-width:20rem;
+    background-color: rgb(240, 240, 240);
+    
+}
+
+form label.sbs {
+    display: block;
+    padding: .2rem 0;
+}
+
+form input.submitBtn {
+    border: solid 1px black;
+    background-color: #0000ff;
+    color:white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width:96%;
+    max-width: 20rem;
+    margin-left: 20%;
+    box-shadow: 10px 10px 5px grey;
+}
+
+
+form input.submitBtn:hover {
+    background-color: grey;
+    color: yellow;
+}
+
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+@media screen and (min-width: 1150px) and (max-width: 1500px) { 
+
+    html {
+        background-color: #0000ff;
+        border-right: 5rem solid #0000ff;;
+        border-left: 5rem solid #0000ff;;
+        margin: 0;
+    }
+
+    #companies{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+
+    nav {
+        float:right;
+        border-radius: 0px;
+    }
+
+    nav ul .navMain     { display: none; }
+
+    .navOne {
+        display: inline;
+    }
+
+    nav select { display: inline-block; 
+        padding: 6px; 
+        margin-left: 3rem;
+    }
+
+    html {
+        background-color: #0000ff;
+        border-right: 2rem solid #0000ff;;
+        border-left: 2rem solid #0000ff;;
+        margin: 0;
+    }
+    #companies{
+        display:block;    
+    }
+
+    html {
+        background-color: #0000ff;
+        border-right: 2rem solid #0000ff;;
+        border-left: 2rem solid #0000ff;;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #mainNav{
+        overflow: visible ;
+    }
+
+    nav {
+        margin-top: -3rem;
+        float:left;
+    }
+
+    
+    form fieldset {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    form legend {
+        font-size: 1rem;
+    }
+
+    form label.sbs {
+        padding: .75rem 0;
+        font-size: .8rem;
+    }
+
+    form label.top, form div {
+        font-size: .8rem;
+        max-width:15rem;
+    }
+
+    form input.submitBtn {
+        max-width: 15rem;
+        margin-left: 15%;
+    }
+}
+
